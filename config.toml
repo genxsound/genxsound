@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://www.genxsound.com"
+baseurl = "/"
 languageCode = "en-us"
 title = "genXsound"
 theme = "hugo-highlights-theme"
