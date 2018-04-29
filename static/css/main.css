@@ -2557,7 +2557,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #9ed8b6;
+				background-color: #7ba1e3;
 			}
 
 			input[type="submit"].special:active,
@@ -2565,7 +2565,7 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #7aca9a;
+				background-color: #5887e1;
 			}
 
 			input[type="submit"].special.icon:before,
