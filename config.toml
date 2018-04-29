@@ -1,0 +1,147 @@
+# Site settings
+baseurl = "https://www.genxsound.com"
+languageCode = "en-us"
+title = "genXsound"
+theme = "hugo-highlights-theme"
+
+# Enter your tracking code to enable Google analytics
+googleAnalytics = "UA-15711163-1"
+
+[params]
+
+  # You can use Markdown for urls [text](//domain.tld/source)
+  #
+  # All icons using Fontawesom's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons.
+
+  # To provide more meta data for search engings feel free to add a few informations.
+  # This lines will be inserted as meta tags.
+  name = "genxsound"
+  description = "Quality sound reinforcement anyone can afford"
+
+  # For a static site it's not possible to provide a contact form. The contact form uses
+  # www.formspree.io as a proxy. The form makes a Post request to their servers to send an email
+  # Visitors can send up to a 1000 emails each month
+  #
+  # How to setup formspree
+  #
+  # - set your email address under 'email' below
+  # - upload the generated site to your server
+  # - send a dummy email to yourself to confirm your account
+  # - click the confirmation link in the email from www.formspree.io
+  # - That's all. Enjoy mailing!
+  email = "shane.d.lee@gmail.com"
+
+  # If this param is set to true, every section gets an own background image (located at static/images)
+  # to change the image you could use the param picture on every section.
+  # If it's disabled you could change the background to overwrite the bg.png and overlay.png to set the background.
+  backgroundpersection = true
+
+  # hero Section
+  [params.hero]
+    type = "hero"
+    title = "genXsound"
+    description = "Quality sound reinforcement anyone can afford"
+    buttontext = "about"
+
+  # about section
+  [[params.block]]
+    id = "about"
+    type = "text"
+    title = "about genXsound"
+    description = "genXsound was founded by Shane Lee in 2003. Shane is a musician and sound engineer with over 30 years experience. He has acquired a lot of equipment over the years for his own band. He uses that equipment to help local artists and venues at a reasonable cost. He believes in arriving early, having a clean stage, and good sound."
+    buttontext = "next"
+    # the picture is storead at static/images/
+    picture = "stage.jpg"
+
+  # skill section
+  [[params.block]]
+    id = "skills"
+    type = "list"
+    title = "Services"
+    description = "Sound reinforcement for live events to include live music, parties, corporate events, weddings, etc."
+    buttontext = "next"
+    # the picture is storead at static/images/
+    picture = "stage.jpg"
+
+    [[params.block.item]]
+      icon = "fa-tasks"
+      title = "Digital Mixing"
+
+    [[params.block.item]]
+      icon = "fa-volume-up"
+      title = "Live Sound"
+
+    [[params.block.item]]
+      icon = "fa-microphone"
+      title = "Live Recording"
+
+    [[params.block.item]]
+      icon = "fa-music"
+      title = "Music"
+
+  # infos section
+  [[params.block]]
+    id = "infos"
+    type = "text"
+    title = "Equipment"
+    description = "JBL and Peavey speakers. Crown Power Amps. Shure and Blue microphones. Allen Heath Analog and SAC Digital Consoles."
+    # the picture is stored at static/images/
+    picture = "stage.jpg"
+
+#  # custom section
+#  [[params.block]]
+#    id = "important"
+#    # to make custom section copy <theme>/layouts/partials/text.html to /layouts/partials/custom.html and edit it according to your needs.
+#    type = "custom"
+#    title = "Don't forget"
+#    description = "Curabitur massa ante, semper at massa et, semper pellentesque velit. Duis tempor est nisi, a gravida risus malesuada eget. Nunc rutrum arcu laoreet mauris sodales vehicula. Nunc iaculis felis ac dui egestas, vel ullamcorper tellus bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia sem porttitor, fringilla metus at, convallis quam. Integer convallis a justo non pellentesque."
+#    # the picture is storead at static/images/
+#    picture = "pic04.jpg"
+
+  # contact form
+  [[params.block]]
+    id = "contact"
+    type = "contact"
+    title = "Contact"
+    picture = "stage.jpg"
+
+    [params.block.form]
+      name = "Name"
+      email = "Your Email"
+      message = "Your Message"
+      buttontext = "send message"
+
+  # footer section
+  # this section includes last block and social icons
+
+  [params.footer]
+    enable = true
+
+    # social icons
+    [params.footer.social_list]
+      enable = true
+
+      [[params.footer.social]]
+        title = "Twitter"
+        icon = "fa-twitter"
+        link = "https://twitter.com/teleshanester"
+
+      [[params.footer.social]]
+        title = "Facebook"
+        icon = "fa-facebook"
+        link = "https://www.facebook.com/shaneleeband"
+
+      [[params.footer.social]]
+        title = "Email"
+        icon = "fa-envelope"
+        link = "mailto:shane.d.lee@gmail.com"
+
+    # copyright
+    #[params.footer.copyright.notice]
+
+      [[params.footer.copyright.notice]]
+        text = "© genXsound 2018"
+
+      [[params.footer.copyright.notice]]
+        text = "Design: twangboy (//github.com/twangboy/)"
